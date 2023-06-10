@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+header {
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px #d5d4d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+header h2 {
+  font-size: 1.2rem;
+  color: #3f3f3f;
+}
+header p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #707070;
+}
+main {
+  width: 100%;
+  background-color: #f0efef;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+main ul {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 0px 8px 2px #bfbfbf;
+  border-radius: 0.2em;
+}
+main ul li {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e2e2;
+  color: #3f3f3f;
+  font-weight: 500;
+}
+main ul li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+main ul li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.phoneNum {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #707070;
+}
+span {
+  color: #235b94;
+}
