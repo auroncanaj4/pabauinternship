@@ -16,7 +16,10 @@ shuffleBtn.addEventListener("click", function () {
 });
 
 changeBtn.addEventListener("click", () => {
-  console.log("Change Button Was Clicked");
+  const labelDatas = ["ReactJs", "NodeJs", "ThreeJs", "VueJs"];
+  labels.forEach((label, i) => {
+    label.textContent = labelDatas[i];
+  });
 });
 
 showBtn.addEventListener("click", () => {
