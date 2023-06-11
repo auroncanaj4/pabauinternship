@@ -1,5 +1,6 @@
 import "./App.css";
 import img from "./assets/images/crows.jpg";
+import logo from "./assets/images/Logo.jpeg";
 
 function App() {
   return (
@@ -61,7 +62,9 @@ function App() {
         </ul>
       </main>
       <header>
-        <h3>Powered by Pabau</h3>
+        <h4>
+          Powered by <img src={logo} alt="pabau"></img>
+        </h4>
       </header>
     </>
   );
