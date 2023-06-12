@@ -1,44 +1,18 @@
 import React from "react";
-import img from "../assets/images/crows.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../assets/style/elementList.css";
-const STATIC_DATA = [
-  {
-    id: "1",
-    img: img,
-    title: "Anti Wrinkle Treatment",
-    icon: ">",
-  },
-  {
-    id: "2",
-    img: img,
-    title: "Anti Wrinkle Treatment",
-    icon: ">",
-  },
-  {
-    id: "3",
-    img: img,
-    title: "Anti Wrinkle Treatment",
-    icon: ">",
-  },
-  {
-    id: "4",
-    img: img,
-    title: "Anti Wrinkle Treatment",
-    icon: ">",
-  },
-];
 
-const ElementList = () => {
+const ElementList = ({ items, handleSelectedItem }) => {
   return (
     <ul>
-      {STATIC_DATA.map((item) => {
+      {items.map((item) => {
         return (
-          <li key={item.id}>
+          <li key={item.id} onClick={handleSelectedItem(item)}>
             <div>
               <img src={item.img} alt="img"></img>
               <p>{item.title}</p>
             </div>
-            <p> {item.icon} </p>
+            <FontAwesomeIcon icon={item.icon} />
           </li>
         );
       })}
