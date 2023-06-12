@@ -6,7 +6,8 @@ import logo from "./assets/images/Logo.jpeg";
 import HeadFootContainer from "./components/HeadFootContainter";
 import ElementList from "./components/ElementList";
 import img from "./assets/images/crows.jpg";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
   const [step, setStep] = useState("1/2");
   const [selectedOption, setSelectedOption] = useState(null);
@@ -56,7 +57,9 @@ function App() {
         {selectedOption ? (
           <>
             <h2>{selectedOption.title}</h2>
-            <button onClick={handleGoBack}> Go Back</button>
+            <button onClick={handleGoBack}>
+              <FontAwesomeIcon icon={faAngleLeft} /> Go Back
+            </button>
           </>
         ) : (
           <>
