@@ -5,7 +5,10 @@ import { useState } from "react";
 import logo from "./assets/images/Logo.jpeg";
 import HeadFootContainer from "./components/HeadFootContainter";
 import ElementList from "./components/ElementList";
-import img from "./assets/images/crows.jpg";
+import img from "./assets/images/mercedes.jpg";
+import img2 from "./assets/images/Ferrari.jpg";
+import img3 from "./assets/images/RB.jpg";
+import img4 from "./assets/images/AM.jpg";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
@@ -16,25 +19,25 @@ function App() {
     {
       id: "1",
       img: img,
-      title: "Anti Wrinkle Treatment",
+      title: "Mercedes-Benz",
       icon: faAngleRight,
     },
     {
       id: "2",
-      img: img,
-      title: "Anti Wrinkle Treatment",
+      img: img2,
+      title: "Ferrari",
       icon: faAngleRight,
     },
     {
       id: "3",
-      img: img,
-      title: "Anti Wrinkle Treatment",
+      img: img3,
+      title: "Red Bull",
       icon: faAngleRight,
     },
     {
       id: "4",
-      img: img,
-      title: "Anti Wrinkle Treatment",
+      img: img4,
+      title: "Aston Martin",
       icon: faAngleRight,
     },
   ];
@@ -69,7 +72,7 @@ function App() {
             />
             <ul>
               <p className="phoneNum">
-                Not sure about consultation type? Please, call
+                Not sure about best F1 team? Please, call
                 <span> 0203 7959063</span>
               </p>
             </ul>
