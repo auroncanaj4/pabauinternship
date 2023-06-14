@@ -46,6 +46,7 @@ main {
   font-weight: 500;
   color: #707070;
   text-align: center;
+  cursor: default;
 }
 span {
   color: #235b94;
